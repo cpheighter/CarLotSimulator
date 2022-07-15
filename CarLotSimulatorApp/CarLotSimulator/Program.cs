@@ -58,6 +58,9 @@ namespace CarLotSimulator
             {
                 Console.WriteLine($"A {car.Year} {car.Make} {car.Model} engine noise is {car.EngineNoise} and the honk noise is {car.HonkNoise}. \nIs Driveable? {car.IsDriveable}\n");
             }
+            Console.WriteLine("---------------------");
+            CarLot.NumberOfCars = allCars.Cars.Count;
+            Console.WriteLine($"The total amount of cars is {CarLot.NumberOfCars}");
         }
     }
 }
